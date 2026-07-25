@@ -1,0 +1,384 @@
+/* ===========================
+   LOGIN PAGE
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fff5f0, #fffaf6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.login-card {
+    width: 1200px;
+    max-width: 100%;
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 15px 50px rgba(0,0,0,.15);
+}
+
+/* ===========================
+   LEFT PANEL
+=========================== */
+
+.left-panel {
+    background: linear-gradient(135deg,#ff6b35,#ff914d);
+    color: white;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo h1{
+    font-size:32px;
+    font-weight:700;
+}
+
+.hero-content h2{
+    margin-top:50px;
+    font-size:42px;
+    line-height:1.2;
+}
+
+.hero-content p{
+    margin-top:20px;
+    font-size:17px;
+    opacity:.95;
+}
+
+.hero-content ul{
+    margin-top:30px;
+    list-style:none;
+}
+
+.hero-content li{
+    margin:15px 0;
+    font-size:16px;
+}
+
+.hero-content img{
+    width:100%;
+    border-radius:20px;
+    margin-top:40px;
+}
+
+/* ===========================
+   RIGHT PANEL
+=========================== */
+
+.right-panel{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px;
+}
+
+.login-box{
+    width:100%;
+    max-width:430px;
+}
+
+.login-box h2{
+    font-size:32px;
+    color:#222;
+}
+
+.login-box p{
+    color:#777;
+    margin-top:8px;
+    margin-bottom:30px;
+}
+
+/* ===========================
+ ROLE TABS
+=========================== */
+
+.role-tabs{
+    display:flex;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+.role-tabs button{
+
+    flex:1;
+
+    border:none;
+
+    background:#f4f4f4;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.role-tabs button:hover{
+
+    background:#ffe7db;
+
+}
+
+.role-tabs button.active{
+
+    background:#ff6b35;
+
+    color:white;
+
+}
+
+/* ===========================
+ INPUTS
+=========================== */
+
+.input-group{
+
+    margin-bottom:20px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.input-box{
+
+    display:flex;
+
+    align-items:center;
+
+    border:2px solid #ececec;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+}
+
+.input-box:focus-within{
+
+    border-color:#ff6b35;
+
+}
+
+.input-icon{
+
+    margin-left:15px;
+
+    color:#777;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    padding:16px;
+
+    font-size:15px;
+
+}
+
+.eye-btn{
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    margin-right:15px;
+
+}
+
+/* ===========================
+ REMEMBER
+=========================== */
+
+.login-options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.remember{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.forgot{
+
+    color:#ff6b35;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+ LOGIN BUTTON
+=========================== */
+
+.login-btn{
+
+    width:100%;
+
+    border:none;
+
+    background:#ff6b35;
+
+    color:white;
+
+    padding:16px;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#e55a27;
+
+    transform:translateY(-2px);
+
+}
+
+/* ===========================
+ REGISTER
+=========================== */
+
+.register-link{
+
+    text-align:center;
+
+    margin-top:25px;
+
+}
+
+.register-link span{
+
+    color:#777;
+
+}
+
+.register-link a{
+
+    margin-left:8px;
+
+    color:#ff6b35;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+}
+
+/* ===========================
+ MOBILE
+=========================== */
+
+@media(max-width:900px){
+
+.login-card{
+
+grid-template-columns:1fr;
+
+}
+
+.left-panel{
+
+padding:40px;
+
+}
+
+.right-panel{
+
+padding:40px;
+
+}
+
+.hero-content img{
+
+display:none;
+
+}
+
+.role-tabs{
+
+flex-direction:column;
+
+}
+
+}
